@@ -5,7 +5,7 @@ job( 'First-Maven-Project-Via-DSLjob') {
 	    git("https://github.com/lavkumar809/myrepo1.git", "master")
 	}
 	triggers {
-		scm('* * * * *')
+		scm('0 9 * * *')
 		}
 	steps {
 		maven('clean package', 'pom.xml')
