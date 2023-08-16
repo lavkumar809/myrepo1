@@ -17,8 +17,7 @@ job('Generated-Maven-Project') {
     }
 
     steps {
-       maven('clean package', 'pom.xml')
-        }
+        maven('clean package', 'pom.xml')
     }
 
     publishers {
