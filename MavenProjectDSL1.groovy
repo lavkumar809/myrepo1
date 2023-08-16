@@ -17,9 +17,7 @@ job('Generated-Maven-Project') {
     }
 
     steps {
-        maven {
-            maven('clean package', 'pom.xml')
-            mavenInstallation('Maven-3.9.2')  // Specify the Maven name defined in Jenkins
+       maven('clean package', 'pom.xml')
         }
     }
 
