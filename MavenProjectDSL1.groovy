@@ -14,9 +14,9 @@ job('First-Maven-Project-Via-DSLjob') {
     
     steps {
         maven {
-            mavenName('Maven-3.9.2')
             goals('clean package')
             pom('pom.xml')
+            mavenInstallation('Maven-3.9.2')
         }
     }
 
