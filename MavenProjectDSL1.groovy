@@ -11,9 +11,9 @@ job('First-Maven-Project-Via-DSLjob') {
     }
 
     steps {
-        maven('Maven-3.9.2') {  // Specify the Maven version
+        maven {
             goals('clean package')
-            mavenInstallation('Maven-3.9.2')  // The name of the Maven installation configured in Jenkins
+            mavenInstallation('Maven-3.9.2')  // Specify the Maven name defined in Jenkins
             pom('pom.xml')
         }
     }
